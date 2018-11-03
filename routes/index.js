@@ -4,12 +4,12 @@ var mongoose= require('mongoose');
 
 var options = {connectTimeoutMS: 5000, useNewUrlParser: true };
 
-mongoose.connect[('mongodb://ludovic:Azerty69@ds249873.mlab.com:49873/vendredi', 
+mongoose.connect('mongodb://ludovic:69Azerty@ds249873.mlab.com:49873/vendredi', 
     options,         
     function(err) {
      console.log(err);
     }
-)];
+);
  var userSchema = mongoose.Schema({
     lastName: String,
     firstName: String,
@@ -21,11 +21,7 @@ var UserModel = mongoose.model('users', userSchema);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.post('/addUsers', function(req, res,){
-		console.log(req.body);
+			console.log(req.body);
 		var newUser = new UserModel ({
 		 lastName: "Vanessa", 
 		 firstName: "Paradis", 
@@ -37,6 +33,10 @@ router.post('/addUsers', function(req, res,){
  		console.log(user);
     }
 );
+
+  res.render('index', { title: 'Express' });
 });
+
+
 
 module.exports = router;
