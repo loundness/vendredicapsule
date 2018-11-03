@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <!-- je crée un formulaire avec ma route /addUsers et la méthode post-->
+    <div class="formulaire">
+    <h2 id="title">Formulaire d'enregistrement</h2>
+    <form class="" action="/addUsers" method="post">
+    	<input type="text" name="lastName" placeholder="lastName">
+    	<input type="text" name="firstName" placeholder="firstName">
+    	<input type="text" name="age" placeholder="age">
+    	<input type="text" name="email" placeholder="email">
+		<button type="submit" id="sub"> Enregistrer</button> 	
+    </form>
+    <form class="" action="/suppUsers" method="post">
+    	<button type="submit" id="supp">Supprimer</button>
+    </form>
+
+    
+  </div>
+  </body>
+</html>
