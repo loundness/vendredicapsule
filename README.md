@@ -7,7 +7,7 @@ Dépendances utilisées;
 	"nodemon": "^1.18.5"
 	"mongoose": "^5.3.8"
 ```
-##Schéma de l'application:
+## Schéma de l'application: ##
 
 ```
 ├── app.js
